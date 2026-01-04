@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transaksi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand">📚 Perpustakaan</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="transaksi.html">Transaksi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="daftar_transaksi.html">Daftar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-4 col-md-6">
+      <div class="card p-4 shadow">
+        <h4 class="mb-3">Transaksi Buku</h4>
+
+        <input
+          id="nama"
+          class="form-control mb-2"
+          placeholder="Nama Peminjam"
+        />
+        <input id="buku" class="form-control mb-2" placeholder="Judul Buku" />
+        <input
+          id="jumlah"
+          type="number"
+          class="form-control mb-3"
+          placeholder="Jumlah"
+        />
+
+        <button onclick="simpanTransaksi()" class="btn btn-primary">
+          Simpan Transaksi
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
